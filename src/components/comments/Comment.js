@@ -63,7 +63,7 @@ const Comment = () => {
           value={fullname}
           onChange={handleName}
         />
-        {errors.noInput && <span>pole nie moze byc puste</span>}
+        {/* {errors.noInput && <span>pole nie moze byc puste</span>} */}
 
         <input
           type="textarea"
