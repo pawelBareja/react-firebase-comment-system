@@ -1,12 +1,12 @@
 import firebase from "firebase";
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyDOiNRODXmIP8h0tRXI1951c5Q_5u2jKSg",
-  authDomain: "comments-system-74171.firebaseapp.com",
-  projectId: "comments-system-74171",
-  storageBucket: "comments-system-74171.appspot.com",
-  messagingSenderId: "649441903279",
-  appId: "1:649441903279:web:8ad6f054bf401e2b22ca5a",
+  apiKey: process.env.REACT_APP_FIREBSE_APIKEY,
+  authDomain: process.env.REACT_APP_FIREBSE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBSE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBSE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBSE_MESSEGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBSE_APP_ID,
 });
 
 const db = firebaseApp.firestore();
